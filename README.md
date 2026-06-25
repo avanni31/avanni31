@@ -1,9 +1,8 @@
 <div align="center">
 
-# Avanni Thakur
+![banner](./banner.svg)
 
-### Electronics & Computer Engineering Student
-**Embedded Systems · FPGA Design · RTL · Semiconductor Engineering · Hardware-Software Co-Design**
+<br>
 
 📍 Shimla, Himachal Pradesh, India &nbsp;|&nbsp; 🎓 Shiv Nadar Institute of Eminence (2024–2028)
 
