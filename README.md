@@ -80,57 +80,39 @@
 
 ## 🏆 Featured Projects
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>⚡ FPGA AI Accelerator</h3>
-      <p><em>Digital Hardware Design · 2024–Present</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/Verilog_HDL-FF6F00?style=flat-square" />
-        <img src="https://img.shields.io/badge/FPGA-6A0DAD?style=flat-square" />
-        <img src="https://img.shields.io/badge/Systolic_Array-555?style=flat-square" />
-      </p>
-      <p>Designed an FPGA-based AI accelerator implementing <strong>matrix multiplication using a systolic array architecture</strong>. Includes Processing Elements, MAC Units, Controller FSM, Input Buffer, and Weight Buffer.</p>
-    </td>
-    <td width="50%">
-      <h3>📡 Ultrasonic Radar System</h3>
-      <p><em>Embedded Systems · 2024</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square" />
-        <img src="https://img.shields.io/badge/PWM-555?style=flat-square" />
-        <img src="https://img.shields.io/badge/UART-555?style=flat-square" />
-      </p>
-      <p>Designed an <strong>ultrasonic radar system</strong> capable of scanning objects using servo-based motion — STM32 + Ultrasonic Sensor + Servo Motor with real-time object detection.</p>
-    </td>
-    <tr>
-    <td width="50%">
-      <h3>🔬 Semiconductor Packaging & Thermal Analysis</h3>
-      <p><em>Semiconductor Engineering · 2024</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/ANSYS-FFB71B?style=flat-square" />
-        <img src="https://img.shields.io/badge/Flip_Chip_BGA-555?style=flat-square" />
-        <img src="https://img.shields.io/badge/Thermal_Simulation-red?style=flat-square" />
-      </p>
-      <p>Performed <strong>semiconductor package modelling and thermal analysis</strong> of Flip-Chip BGA using ANSYS Electronics Desktop — temperature distribution, packaging reliability.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>📻 2×1 Patch Antenna Array</h3>
-      <p><em>Antenna Design · 2024</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/CST_Microwave_Studio-0072C6?style=flat-square" />
-        <img src="https://img.shields.io/badge/Antenna_Simulation-0072C6?style=flat-square" />
-      </p>
-      <p>Designed and simulated a <strong>2×1 microstrip patch antenna array</strong>. Analysis includes S11, VSWR, Gain, Directivity, Radiation Pattern, Electric Field, and Magnetic Field.</p>
-    </td>
-    <td width="50%">
-      <h3>🔮 More coming soon...</h3>
-      <p><em>SystemVerilog · VLSI · ASIC</em></p>
-      <p>Currently working on projects in <strong>SystemVerilog, FPGA Verification, Computer Architecture, VLSI Design Flow</strong>, and ASIC Design basics.</p>
-    </td>
-  </tr>
-</table>
+### ⚡ FPGA AI Accelerator
+*Digital Hardware Design · 2024–Present*
+
+![Verilog HDL](https://img.shields.io/badge/Verilog_HDL-FF6F00?style=flat-square) ![FPGA](https://img.shields.io/badge/FPGA-6A0DAD?style=flat-square) ![Systolic Array](https://img.shields.io/badge/Systolic_Array-555?style=flat-square)
+
+Designed an FPGA-based AI accelerator implementing **matrix multiplication using a systolic array architecture**. Includes Processing Elements, MAC Units, Controller FSM, Input Buffer, and Weight Buffer.
+
+---
+
+### 📡 Ultrasonic Radar System
+*Embedded Systems · 2024*
+
+![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square) ![PWM](https://img.shields.io/badge/PWM-555?style=flat-square) ![UART](https://img.shields.io/badge/UART-555?style=flat-square)
+
+Designed an **ultrasonic radar system** capable of scanning objects using servo-based motion — STM32 + Ultrasonic Sensor + Servo Motor with real-time object detection.
+
+---
+
+### 🔬 Semiconductor Packaging & Thermal Analysis
+*Semiconductor Engineering · 2024*
+
+![ANSYS](https://img.shields.io/badge/ANSYS-FFB71B?style=flat-square) ![Flip Chip BGA](https://img.shields.io/badge/Flip_Chip_BGA-555?style=flat-square) ![Thermal Simulation](https://img.shields.io/badge/Thermal_Simulation-red?style=flat-square)
+
+Performed **semiconductor package modelling and thermal analysis** of Flip-Chip BGA using ANSYS Electronics Desktop — temperature distribution, packaging reliability.
+
+---
+
+### 📻 2×1 Patch Antenna Array
+*Antenna Design · 2024*
+
+![CST Microwave Studio](https://img.shields.io/badge/CST_Microwave_Studio-0072C6?style=flat-square) ![Antenna Simulation](https://img.shields.io/badge/Antenna_Simulation-0072C6?style=flat-square)
+
+Designed and simulated a **2×1 microstrip patch antenna array**. Analysis includes S11, VSWR, Gain, Directivity, Radiation Pattern, Electric Field, and Magnetic Field.
 
 ---
 
