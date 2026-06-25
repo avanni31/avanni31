@@ -1,194 +1,298 @@
-<div align="center">
+# 📡 Simulating and Analysing Antenna Array (2×1) Using CST Microwave Studio
 
-# Avanni Thakur
+> **ECE-205: Electromagnetic Engineering**  
+> A simulation-based study of a 2×1 microstrip patch antenna array operating at **2.45 GHz**, designed and analyzed using CST Microwave Studio.
 
-### Electronics & Computer Engineering Student
-**Embedded Systems · FPGA Design · RTL · Semiconductor Engineering · Hardware-Software Co-Design**
-
-📍 Shimla, Himachal Pradesh, India &nbsp;|&nbsp; 🎓 Shiv Nadar Institute of Eminence (2024–2028)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/avanni-thakur-a955442ab)
-[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:avanni05@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/avanni31)
-
-</div>
 
 ---
 
-## 🔧 About Me
+## 📌 Table of Contents
 
-- 🎓 **B.Tech in Electronics & Computer Engineering** — Shiv Nadar Institute of Eminence (2024–2028)
-- 💡 Passionate about **Embedded Systems**, **FPGA Design**, **RTL Design**, and **Semiconductor Engineering**
-- 🔬 Building hardware-software systems — from **STM32 embedded applications** to **FPGA accelerators** and **semiconductor simulations**
-- 🌱 Currently learning **SystemVerilog**, **FPGA Verification**, **VLSI Design Flow**, **ASIC Design**, and **Semiconductor Manufacturing**
-- 🎯 Looking for internships in **Embedded Systems · FPGA · RTL Design · Semiconductor Engineering · VLSI**
-- ⚡ Fun fact: I enjoy transforming hardware concepts into working systems — from antenna simulations and semiconductor package analysis to STM32 applications and FPGA-based accelerators
-
----
-
-## 🚀 Tech Stack
-
-### Languages & Programming
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![Verilog](https://img.shields.io/badge/Verilog-FF6F00?style=flat-square&logo=verilog&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
-
-### Embedded Systems
-![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
-![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
-![UART](https://img.shields.io/badge/UART-555?style=flat-square)
-![SPI](https://img.shields.io/badge/SPI-555?style=flat-square)
-![I2C](https://img.shields.io/badge/I2C-555?style=flat-square)
-![GPIO](https://img.shields.io/badge/GPIO-555?style=flat-square)
-![PWM](https://img.shields.io/badge/PWM-555?style=flat-square)
-![Interrupts](https://img.shields.io/badge/Interrupts-555?style=flat-square)
-
-### FPGA & Digital Design
-![Verilog HDL](https://img.shields.io/badge/Verilog_HDL-FF6F00?style=flat-square)
-![RTL Design](https://img.shields.io/badge/RTL_Design-6A0DAD?style=flat-square)
-![FSM](https://img.shields.io/badge/Finite_State_Machines-6A0DAD?style=flat-square)
-![FPGA](https://img.shields.io/badge/FPGA_Development-FF6F00?style=flat-square)
-![Systolic Array](https://img.shields.io/badge/Systolic_Array_Architecture-6A0DAD?style=flat-square)
-
-### Semiconductor & Simulation
-![ANSYS](https://img.shields.io/badge/ANSYS_Electronics_Desktop-FFB71B?style=flat-square)
-![CST](https://img.shields.io/badge/CST_Microwave_Studio-0072C6?style=flat-square)
-![Thermal Analysis](https://img.shields.io/badge/Thermal_Analysis-red?style=flat-square)
-![Antenna Simulation](https://img.shields.io/badge/Antenna_Simulation-0072C6?style=flat-square)
-
-### Development Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![STM32CubeIDE](https://img.shields.io/badge/STM32CubeIDE-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+- [Introduction](#introduction)
+- [Working Principle](#working-principle)
+- [Design Specifications](#design-specifications)
+- [Methodology](#methodology)
+- [Results and Observations](#results-and-observations)
+  - [VSWR Analysis](#vswr-analysis)
+  - [S-Parameter Analysis](#s-parameter-analysis)
+  - [E-Field Distribution](#e-field-distribution)
+  - [H-Field Analysis](#h-field-analysis)
+  - [Farfield Radiation Pattern](#farfield-radiation-pattern)
+  - [Gain and Directivity](#gain-and-directivity)
+- [Conclusion](#conclusion)
+- [Applications](#applications)
 
 ---
 
-## 💼 Experience
+## 📖 Introduction
 
-### 💼 Summer Intern — Grant Thornton Bharat LLP *(Jun 2024 – Jul 2024)*
-> Remote
-- Conducted **ESG research and sustainability analysis**
-- Analysed corporate ESG reports and sustainability reporting frameworks
-- Worked on **regulatory compliance** and sustainability reporting standards
-- Developed analytical and professional communication skills
+A **microstrip patch antenna** is a low-profile, compact antenna widely used in wireless communication systems due to its ease of fabrication. However, a single patch antenna suffers from **low gain** and a **broad radiation pattern**, limiting its performance in high-precision applications.
 
----
+To overcome these limitations, this project combines two identical patch antennas into a **2×1 antenna array**, which significantly improves radiation characteristics — providing higher gain and more directional radiation.
 
-## 🏆 Featured Projects
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3>⚡ FPGA AI Accelerator</h3>
-      <p><em>Digital Hardware Design · 2024–Present</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/Verilog_HDL-FF6F00?style=flat-square" />
-        <img src="https://img.shields.io/badge/FPGA-6A0DAD?style=flat-square" />
-        <img src="https://img.shields.io/badge/Systolic_Array-555?style=flat-square" />
-      </p>
-      <p>Designed an FPGA-based AI accelerator implementing <strong>matrix multiplication using a systolic array architecture</strong>. Includes Processing Elements, MAC Units, Controller FSM, Input Buffer, and Weight Buffer.</p>
-    </td>
-    <td width="50%">
-      <h3>📡 Ultrasonic Radar System</h3>
-      <p><em>Embedded Systems · 2024</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square" />
-        <img src="https://img.shields.io/badge/PWM-555?style=flat-square" />
-        <img src="https://img.shields.io/badge/UART-555?style=flat-square" />
-      </p>
-      <p>Designed an <strong>ultrasonic radar system</strong> capable of scanning objects using servo-based motion — STM32 + Ultrasonic Sensor + Servo Motor with real-time object detection.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>🔬 Semiconductor Packaging & Thermal Analysis</h3>
-      <p><em>Semiconductor Engineering · 2024</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/ANSYS-FFB71B?style=flat-square" />
-        <img src="https://img.shields.io/badge/Flip_Chip_BGA-555?style=flat-square" />
-        <img src="https://img.shields.io/badge/Thermal_Simulation-red?style=flat-square" />
-      </p>
-      <p>Performed <strong>semiconductor package modelling and thermal analysis</strong> of Flip-Chip BGA using ANSYS Electronics Desktop — temperature distribution, packaging reliability.</p>
-    </td>
-    <td width="50%">
-      <h3>📻 2×1 Patch Antenna Array</h3>
-      <p><em>Antenna Design · 2024</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/CST_Microwave_Studio-0072C6?style=flat-square" />
-        <img src="https://img.shields.io/badge/Antenna_Simulation-0072C6?style=flat-square" />
-      </p>
-      <p>Designed and simulated a <strong>2×1 microstrip patch antenna array</strong>. Analysis includes S11, VSWR, Gain, Directivity, Radiation Pattern, Electric Field, and Magnetic Field.</p>
-    </td>
-  </tr>
-</table>
+**Key goals of this project:**
+- Design a single microstrip patch antenna resonating at 2.45 GHz
+- Extend it into a 2×1 array configuration
+- Simulate and analyze performance using CST Microwave Studio
+- Verify results against theoretical calculations
 
 ---
 
-## 🏅 Certifications & Achievements
-
-| 🏆 Award | Details | Year |
-|----------|---------|------|
-| 📘 C Programming | Coursera | 2024 |
-| 📗 C++ Programming Level 1 | Certification | 2024 |
-| 📗 C++ Programming Level 2 | Certification | 2024 |
-| 🔬 Semiconductor Packaging Fundamentals | Certification | 2024 |
-| ⚙️ VSD Packaging Workshop | VSD | 2024 |
-
----
-
-## 📚 Coursework
-
-`Digital Electronics` `Embedded Systems` `Electric Machines & Power Systems` `Signals & Systems` `Semiconductor Fundamentals` `Computer Organization` `Data Structures`
-
----
-
-## 🌱 Currently Learning
+## ⚙️ Working Principle
 
 ```
-SystemVerilog          FPGA Verification       Computer Architecture
-Semiconductor Mfg      VLSI Design Flow        ASIC Design Basics
-RTL Optimization
+Input Signal → Feed Port → T-Junction Power Divider
+                                  ↓              ↓
+                           Patch Antenna 1   Patch Antenna 2
+                                  ↓              ↓
+                           Radiation (constructive interference in space)
+```
+
+1. **Signal Feeding** — A signal is injected via a wave port through the microstrip feed line.
+2. **Substrate Role** — The FR4 substrate controls wave speed and field distribution between the patch and the ground plane.
+3. **Ground Plane** — Forces all radiation upward (broadside direction).
+4. **Power Splitting** — A T-junction divider splits the input signal equally, ensuring both patches receive the same power and remain in phase.
+5. **Resonance** — Each patch acts as a resonator; fringing fields at the patch edges cause radiation.
+6. **Array Effect** — The two patches radiate together, and their signals combine via **constructive interference**, resulting in higher gain and narrower beamwidth.
+
+---
+
+## 📐 Design Specifications
+
+| Parameter | Value |
+|-----------|-------|
+| Operating Frequency | 2.45 GHz |
+| Substrate Material | FR4 |
+| Relative Permittivity (εᵣ) | 4.4 |
+| Substrate Height (h) | 1.6 mm |
+| Patch Length (L) | 28.81 mm |
+| Patch Width (W) | 37.23 mm |
+| Inter-element Spacing | λ/2 |
+
+### Quarter-Wave Transformer (QWT) Parameters
+
+| Parameter | Value |
+|-----------|-------|
+| Impedance (Z) | 70.7 Ω |
+| Feed Line Length (Lf) | 14.58 mm |
+| Feed Line Width (Wf2) | 1.62 mm |
+
+### Design Equations
+
+**Patch Width:**
+
+$$W = \frac{c}{2f_0\sqrt{\frac{\varepsilon_R + 1}{2}}}$$
+
+**Effective Permittivity:**
+
+$$\varepsilon_{eff} = \frac{\varepsilon_R + 1}{2} + \frac{\varepsilon_R - 1}{2} \left(\frac{1}{\sqrt{1 + 12\frac{h}{W}}}\right)$$
+
+**Patch Length:**
+
+$$L = \frac{c}{2f_0\sqrt{\varepsilon_{eff}}} - 0.824h \left(\frac{(\varepsilon_{eff}+0.3)\left(\frac{W}{h}+0.264\right)}{(\varepsilon_{eff}-0.258)\left(\frac{W}{h}+0.8\right)}\right)$$
+
+**Quarter-Wave Transformer Impedance:**
+
+$$Z_1 = \sqrt{Z_0 \cdot Z_L}$$
+
+---
+
+## 🔬 Methodology
+
+```
+Step 1: Define Requirements & Calculate Patch Dimensions
+        ↓
+Step 2: Design Single Patch Antenna in CST
+        ↓
+Step 3: Convert to 2×1 Array
+        (Duplicate patch, λ/2 spacing, T-junction feed network)
+        ↓
+Step 4: Run Array Simulation
+        (Add wave port, simulate for S-parameters, E-field, H-field)
+        ↓
+Step 5: Analyze Results & Optimize
+        (Adjust dimensions/spacing/feed position to match theory)
 ```
 
 ---
 
-## 🎯 Areas of Interest
+## 📊 Results and Observations
 
-<div align="center">
+### Simulated Structure
 
-| Hardware | Design | Engineering |
-|----------|--------|-------------|
-| Embedded Systems | RTL Design | Semiconductor Engineering |
-| FPGA Design | Digital Electronics | VLSI |
-| Hardware-Software Co-Design | Computer Architecture | Hardware Verification |
-| Antenna Design | Electronic System Design | — |
-
-</div>
+The final simulated structure consists of:
+- Two microstrip patch elements (yellow)
+- FR4 substrate (beige)
+- Ground plane (bottom layer)
+- T-junction microstrip feed network
+- Wave port (excitation point)
 
 ---
 
-## 🔭 Future Goals
+### VSWR Analysis
 
-I aim to build expertise in **semiconductor engineering and digital hardware design** by working on increasingly complex embedded systems, FPGA projects, and VLSI-oriented designs. My long-term goal is to contribute to the development of **efficient and reliable hardware systems** while pursuing opportunities in semiconductor and embedded engineering.
+The **Voltage Standing Wave Ratio (VSWR)** measures how well the antenna is matched to its feed line.
+
+| VSWR Value | Interpretation |
+|------------|----------------|
+| VSWR = 1 | Perfect matching |
+| VSWR < 2 | Acceptable operation |
+| VSWR > 2 | Poor matching |
+
+**Result:** VSWR ≈ **1.1 – 1.3** at 2.45 GHz
+
+The VSWR plot shows a sharp dip near 2.5 GHz, confirming:
+- Excellent impedance matching in the target band
+- Suitable for wireless communication (2.45 GHz ISM band)
+- Efficient radiation with minimal power loss
 
 ---
 
-<div align="center">
+### S-Parameter Analysis
 
-### 🤝 What I'm Looking For
+#### S11 — Return Loss
 
-I'm actively seeking opportunities in:
+$$S_{11} = 20\log_{10}|\Gamma|$$
 
-**Embedded Systems · FPGA Design · RTL Design · Semiconductor Engineering · VLSI · Hardware Validation · Digital Design Engineering**
+- A deep dip is observed at **~2.45 GHz**
+- Minimum S11 ≈ **−30 dB**
+- Only **~3%** of power is reflected
+- About **~97%** of input power is radiated
+- Bandwidth is defined for S11 < −10 dB
+
+> A return loss of −30 dB indicates excellent impedance matching at the target frequency.
+
+#### S21/S31 — Transmission Coefficient (Power Split)
+
+Power is divided using a **T-junction power divider**. For an ideal equal split:
+
+$$P_{out} = \frac{P_{in}}{2} \quad \Rightarrow \quad 10\log_{10}\left(\frac{1}{2}\right) = -3 \text{ dB}$$
+
+**Result:** Obtained S21/S31 ≈ **−3.5 dB**
+
+The small deviation from the ideal −3 dB is attributed to:
+- Dielectric loss in the FR4 substrate
+- Radiation loss from the feed network
+- Minor impedance mismatches
 
 ---
 
-*Let's build something real in silicon — open to internships for 2025/2026!*
+### E-Field Distribution
 
-![Profile Views](https://komarev.com/ghpvc/?username=avanni31&color=6A0DAD&style=flat-square)
+Simulated at **f = 2.45 GHz** | Maximum E-field: **5001.85 V/m**
 
-</div>
+Key observations:
+- Maximum field intensity concentrated at **patch radiating edges** (fringing fields)
+- Strong field along feeding network confirms proper signal excitation
+- Fringing fields at patch boundaries validate the radiation mechanism
+- Uniform field distribution across both patch elements confirms the array is working symmetrically
+- Field spreading outward indicates effective radiation into free space
+
+---
+
+### H-Field Analysis
+
+Simulated at **f = 2.45 GHz** | Maximum H-field: **23.5087 A/m**
+
+Key observations:
+- High magnetic field concentration near the feed line
+- Magnetic field loops indicate surface current flow on the patches
+- Balanced field distribution across both patches confirms symmetric excitation
+- Outward field propagation contributes to radiation
+
+#### Power Density Calculation from H-Field
+
+$$S = \eta_0 H^2 = 377 \times (23.5087)^2 \approx 208{,}000 \text{ W/m}^2$$
+
+---
+
+### Farfield Radiation Pattern
+
+The 3D farfield pattern at 2.45 GHz shows:
+
+| Feature | Observation |
+|---------|-------------|
+| Pattern Type | Directional (broadside) |
+| Main Lobe Direction | Along +Y axis (broadside) |
+| Side Lobes | Low — confirms directional behavior |
+| Peak Directivity | 8.88 dBi |
+| Color Scale | Red = max radiation, Blue = min radiation |
+
+The pattern confirms the array radiates predominantly in one direction (broadside), with minimal back radiation and low sidelobes — behavior characteristic of a well-designed linear array.
+
+---
+
+### Gain and Directivity
+
+**Farfield simulation data (f = 2.45 GHz):**
+
+| Parameter | Value |
+|-----------|-------|
+| Radiation Efficiency | −3.729 dB |
+| Total Efficiency | −3.759 dB |
+| Directivity | 8.875 dBi |
+
+#### Derived Calculations
+
+**Wavelength:**
+$$\lambda = \frac{c}{f} = \frac{3 \times 10^8}{2.45 \times 10^9} \approx 0.122 \text{ m}$$
+
+**Directivity (linear scale):**
+$$D = 10^{8.875/10} \approx 7.72$$
+
+**Realized Gain:**
+$$G = D + \eta = 8.57 - 6.44 = 2.13 \text{ dBi}$$
+
+**Effective Aperture Area:**
+$$A_e = \frac{\lambda^2 D}{4\pi} \approx 0.0091 \text{ m}^2$$
+
+---
+
+## ✅ Conclusion
+
+The 2×1 microstrip patch antenna array was successfully designed and simulated at 2.45 GHz using CST Microwave Studio. The simulation results validate the design and demonstrate significant performance advantages over a single patch antenna.
+
+### Summary of Key Results
+
+| Metric | Result | Interpretation |
+|--------|--------|----------------|
+| Return Loss (S11) | ≈ −30 dB | Excellent impedance matching |
+| VSWR | ≈ 1.1 – 1.3 | Minimal reflection |
+| S21/S31 | ≈ −3.5 dB | Near-equal power split |
+| Directivity | ≈ 8.875 dBi | Improved radiation performance |
+| Radiation Pattern | Broadside, low sidelobes | Directional and focused |
+| E-field max | 5001.85 V/m | Proper excitation confirmed |
+| H-field max | 23.5087 A/m | Balanced current distribution |
+
+The array configuration successfully demonstrated:
+- Higher gain and directivity compared to a single patch
+- Narrower beamwidth due to constructive interference
+- Efficient power transfer with minimal losses
+- Slight losses attributed to FR4 dielectric and minor impedance mismatch
+
+---
+
+## 📡 Applications
+
+This 2×1 patch antenna array is suitable for:
+
+- **Wi-Fi / ISM Band** — Operates in the 2.4–2.5 GHz band, compatible with IEEE 802.11b/g/n standards
+- **Wireless Communication Systems** — High gain and directivity make it suitable for point-to-point links
+- **IoT and Short-Range Devices** — Compact size and low profile fit embedded applications
+- **Radar Systems** — Directional radiation pattern is beneficial for target detection
+- **Satellite Communication** — Broadside radiation useful for satellite uplink/downlink
+
+---
+
+## 🛠️ Tools Used
+
+- **CST Microwave Studio** — EM simulation and analysis
+- **Solver:** Time Domain (FIT - Finite Integration Technique)
+
+---
+
+## 📚 References
+
+- C. A. Balanis, *Antenna Theory: Analysis and Design*, 3rd Edition, Wiley
+- D. M. Pozar, *Microwave Engineering*, 4th Edition, Wiley
+- CST Studio Suite Documentation
