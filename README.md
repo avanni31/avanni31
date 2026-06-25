@@ -92,8 +92,6 @@
       </p>
       <p>Designed an FPGA-based AI accelerator implementing <strong>matrix multiplication using a systolic array architecture</strong>. Includes Processing Elements, MAC Units, Controller FSM, Input Buffer, and Weight Buffer.</p>
     </td>
-  </tr>
-  <tr>
     <td width="50%">
       <h3>📡 Ultrasonic Radar System</h3>
       <p><em>Embedded Systems · 2024</em></p>
@@ -104,6 +102,8 @@
       </p>
       <p>Designed an <strong>ultrasonic radar system</strong> capable of scanning objects using servo-based motion — STM32 + Ultrasonic Sensor + Servo Motor with real-time object detection.</p>
     </td>
+  </tr>
+  <tr>
     <td width="50%">
       <h3>🔬 Semiconductor Packaging & Thermal Analysis</h3>
       <p><em>Semiconductor Engineering · 2024</em></p>
@@ -114,8 +114,6 @@
       </p>
       <p>Performed <strong>semiconductor package modelling and thermal analysis</strong> of Flip-Chip BGA using ANSYS Electronics Desktop — temperature distribution, packaging reliability.</p>
     </td>
-  </tr>
-  <tr>
     <td width="50%">
       <h3>📻 2×1 Patch Antenna Array</h3>
       <p><em>Antenna Design · 2024</em></p>
@@ -124,11 +122,6 @@
         <img src="https://img.shields.io/badge/Antenna_Simulation-0072C6?style=flat-square" />
       </p>
       <p>Designed and simulated a <strong>2×1 microstrip patch antenna array</strong>. Analysis includes S11, VSWR, Gain, Directivity, Radiation Pattern, Electric Field, and Magnetic Field.</p>
-    </td>
-    <td width="50%">
-      <h3>🔮 More coming soon...</h3>
-      <p><em>SystemVerilog · VLSI · ASIC</em></p>
-      <p>Currently working on projects in <strong>SystemVerilog, FPGA Verification, Computer Architecture, VLSI Design Flow</strong>, and ASIC Design basics.</p>
     </td>
   </tr>
 </table>
