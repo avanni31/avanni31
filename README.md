@@ -80,39 +80,63 @@
 
 ## 🏆 Featured Projects
 
-### ⚡ FPGA AI Accelerator
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [⚡ FPGA AI Accelerator](https://github.com/avanni31/fpga-ai-accelerator)
 *Digital Hardware Design · 2024–Present*
 
 ![Verilog HDL](https://img.shields.io/badge/Verilog_HDL-FF6F00?style=flat-square) ![FPGA](https://img.shields.io/badge/FPGA-6A0DAD?style=flat-square) ![Systolic Array](https://img.shields.io/badge/Systolic_Array-555?style=flat-square)
 
 Designed an FPGA-based AI accelerator implementing **matrix multiplication using a systolic array architecture**. Includes Processing Elements, MAC Units, Controller FSM, Input Buffer, and Weight Buffer.
 
----
+</td>
+<td width="50%" valign="top">
 
-### 📡 Ultrasonic Radar System
+### [📡 Ultrasonic Radar System](https://github.com/avanni31/Ultrasonic_Radar_System)
 *Embedded Systems · 2024*
 
 ![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square) ![PWM](https://img.shields.io/badge/PWM-555?style=flat-square) ![UART](https://img.shields.io/badge/UART-555?style=flat-square)
 
 Designed an **ultrasonic radar system** capable of scanning objects using servo-based motion — STM32 + Ultrasonic Sensor + Servo Motor with real-time object detection.
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 🔬 Semiconductor Packaging & Thermal Analysis
+### [🔬 Semiconductor Packaging & Thermal Analysis](https://github.com/avanni31/VSD_packaging-)
 *Semiconductor Engineering · 2024*
 
 ![ANSYS](https://img.shields.io/badge/ANSYS-FFB71B?style=flat-square) ![Flip Chip BGA](https://img.shields.io/badge/Flip_Chip_BGA-555?style=flat-square) ![Thermal Simulation](https://img.shields.io/badge/Thermal_Simulation-red?style=flat-square)
 
 Performed **semiconductor package modelling and thermal analysis** of Flip-Chip BGA using ANSYS Electronics Desktop — temperature distribution, packaging reliability.
 
----
+</td>
+<td width="50%" valign="top">
 
-### 📻 2×1 Patch Antenna Array
+### [📻 2×1 Patch Antenna Array](https://github.com/avanni31/Simulating_and_Analysing_Antenna_Array_-2-1-)
 *Antenna Design · 2024*
 
 ![CST Microwave Studio](https://img.shields.io/badge/CST_Microwave_Studio-0072C6?style=flat-square) ![Antenna Simulation](https://img.shields.io/badge/Antenna_Simulation-0072C6?style=flat-square)
 
 Designed and simulated a **2×1 microstrip patch antenna array**. Analysis includes S11, VSWR, Gain, Directivity, Radiation Pattern, Electric Field, and Magnetic Field.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔮 More coming soon...
+*SystemVerilog · VLSI · ASIC*
+
+Currently working on projects in **SystemVerilog, FPGA Verification, Computer Architecture, VLSI Design Flow**, and ASIC Design basics.
+
+</td>
+<td width="50%"></td>
+</tr>
+</table>
 
 ---
 
