@@ -92,16 +92,6 @@
       </p>
       <p>Designed an FPGA-based AI accelerator implementing <strong>matrix multiplication using a systolic array architecture</strong>. Includes Processing Elements, MAC Units, Controller FSM, Input Buffer, and Weight Buffer.</p>
     </td>
-    <td width="50%">
-      <h3>🃏 RFID Teen Patti Smart Card Game</h3>
-      <p><em>Embedded Systems · 2024</em></p>
-      <p>
-        <img src="https://img.shields.io/badge/STM32F303-03234B?style=flat-square" />
-        <img src="https://img.shields.io/badge/SPI-555?style=flat-square" />
-        <img src="https://img.shields.io/badge/Embedded_C-00599C?style=flat-square" />
-      </p>
-      <p>Developed a <strong>multiplayer RFID-enabled Teen Patti game</strong> using STM32F303 with RC522 RFID Readers, LCD interface, SPI communication, and real-time game logic.</p>
-    </td>
   </tr>
   <tr>
     <td width="50%">
