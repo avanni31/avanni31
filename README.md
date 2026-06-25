@@ -102,6 +102,7 @@
       </p>
       <p>Designed an <strong>ultrasonic radar system</strong> capable of scanning objects using servo-based motion — STM32 + Ultrasonic Sensor + Servo Motor with real-time object detection.</p>
     </td>
+    <tr>
     <td width="50%">
       <h3>🔬 Semiconductor Packaging & Thermal Analysis</h3>
       <p><em>Semiconductor Engineering · 2024</em></p>
